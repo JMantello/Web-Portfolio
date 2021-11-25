@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="js/canvas1.js"></script>
+    <script src="js/script.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonathan Mantello Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body onload="getUserPreferredTheme();">
+    <div class="body-wrapper">
+      <div class="header">
+        <h1>Jonathan Mantello Portfolio</h1>
+        <div id="darkModeComponent">
+          <p>Dark Mode</p>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="darkThemeCheckbox"
+              onclick="toggleDarkTheme()"
+            />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <details>
+        <summary>Links</summary>
+        <div class="contact-links">
+          <a href="mailto:jonathan.mantello@gmail.com" class="link">
+            <i class="fa fa-envelope-o"></i>
+            <p>Email</p>
+          </a>
+          <a href="https://github.com/JMantello" target="blank" class="link">
+            <i class="fa fa-github"></i>
+            <p>GitHub</p>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jonathan-mantello/"
+            target="blank"
+            class="link"
+          >
+            <i class="fa fa-linkedin-square"></i>
+            <p>LinkedIn</p>
+          </a>
+        </div>
+      </details>
+
+      <details open>
+        <summary>Bio</summary>
+        <p>
+          My name Jonathan Mantello, and I am studying Application Development
+          at Renton Technical College. I enrolled in 2020, and have been
+          building my skills in programming with Java, database design and
+          management with SQL, and front-end web development.
+        </p>
+        <p>
+          I focus heavily on readability, brevity, and reusability when writing
+          In this webite, you will find examples of code that I have written. I
+          code, and I believe in the abilities of methodoligies like test driven
+          development, continuous integration, and agile to create code that is
+          light and flexible, and of a higher quality.
+        </p>
+        <p>
+          Aside from working with software, I am deeply involved with music. I
+          love to play my guitars and other instruments and have been in many
+          bands with my friends. I'm also into cooking and am improving my
+          skills as a home chef.
+        </p>
+      </details>
+
+      <details open class="projects">
+        <summary>Projects</summary>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/JMantello/Blackjack_JMantello"
+              target="blank"
+            >
+              <h2>Blackjack</h2>
+              <p>C# WinForms Blackjack Project</p>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/JMantello/CSI140_FinalProject_JMantello---Final"
+              target="blank"
+            >
+              <h2>CSI140 Front-End Web Development Final Project</h2>
+              <p>Web Portfolio Project from Spring Quarter, 2021</p>
+            </a>
+          </li>
+        </ul>
+      </details>
+    </div>
+  </body>
+</html>
